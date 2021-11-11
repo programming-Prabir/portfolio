@@ -1,0 +1,1087 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*this is html seroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*this is body tag */
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6ddccf;
+    border-radius: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+/* .........Root.......... */
+.Root {
+    overflow-x: hidden;
+}
+
+/* ........container....... */
+.container {
+    margin: auto;
+    width: 1335px;
+    padding: 0px 15px;
+}
+
+/* ...........section.......... */
+section {
+    padding: 3rem 0px;
+}
+
+/*this is a navigation bar */
+
+nav {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, .5);
+}
+
+.navheader {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .NavLinks {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+nav .NavLinks li {
+    width: 80px;
+    line-height: 50px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+
+nav .NavLinks li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+nav .NavLinks #active {
+    border-radius: 1px;
+    background-color: #6ddccf;
+}
+
+nav .NavLinks li:hover {
+    background-color: #6ddccf;
+    border-radius: 1px;
+
+}
+
+nav .logo {
+    color: #94ebcd;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+
+/*this is id about me */
+
+nav .NavLinks #about:hover .navigationlist {
+    left: 0;
+}
+
+nav .NavLinks #about .navigationlist {
+    top: 50px;
+    left: -9999px;
+    position: absolute;
+}
+
+nav .NavLinks #about .navigationlist li {
+    display: block;
+    padding-left: 5px;
+    list-style-type: none;
+    width: 200px;
+    text-align: start;
+    background-color: #259c8e;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+nav .NavLinks #about .navigationlist li a {
+    text-decoration: none;
+}
+
+nav .NavLinks #about .navigationlist li:hover {
+    background-color: #7bdfd4;
+}
+
+/*this is language */
+
+nav .NavLinks #about .navigationlist #language .skilllist #skill {
+    font-size: 25px;
+    color: #c8eed9;
+}
+
+nav .NavLinks #about .navigationlist #language .skilllist {
+    position: absolute;
+    top: 0px;
+    left: -9999px;
+}
+
+nav .NavLinks #about .navigationlist #language .skilllist li {
+    list-style-type: none;
+    background-color: #1b7368;
+    text-align: center;
+}
+
+nav .NavLinks #about .navigationlist #language .skilllist li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .NavLinks #about .navigationlist #language:hover .skilllist {
+    left: 201px;
+}
+
+nav .NavLinks #about .navigationlist #language .skilllist li:hover {
+    background-color: #5fd9ca;
+}
+
+nav .navToggle {
+    border: none;
+    height: 40px;
+    width: 45px;
+    outline: none;
+    background: none;
+    margin: 5px 0px;
+}
+
+nav .navToggle i {
+    font-size: 35px;
+    color: white;
+}
+
+/*this is header section */
+
+header {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, .4),
+            rgba(0, 0, 0, .4)),
+        url(../images/programme.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 95%, 67% 85%, 0 96%, 0 0);
+}
+
+/* header .intodaction {} */
+
+.intodaction {
+    position: relative;
+    top: 170px;
+    float: right;
+    margin-right: 315px;
+}
+
+.intodaction .about_me h1 {
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color: #94ebcd;
+}
+
+.intodaction .about_me h2 {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.intodaction .about_me h2 span {
+    color: #94ebcd;
+
+}
+
+.intodaction .about_me h2 span:nth-child(1) {
+    color: #fff;
+}
+
+.intodaction .about_me p {
+    padding-top: 10px;
+    width: 400px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.intodaction .about_me input[type="button"] {
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    font-family: bold;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid #6ddccf;
+    background-color: transparent;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 5.s;
+}
+
+.intodaction .about_me input[type="button"]:hover {
+    border-radius: 5px;
+    background-color: #6ddccf;
+}
+
+
+/*this is about section */
+
+.about {
+    background-color: #fff;
+}
+
+.hero {
+    overflow: hidden;
+    padding: 0px 100px;
+}
+
+.aboutImage {
+    width: 300px;
+    margin-right: 40px;
+    float: left;
+}
+
+.hero img {
+    height: 220px;
+    max-width: 100%;
+}
+
+.hero .into h1 {
+    font-size: 30px;
+}
+
+.hero .into h1 span {
+    color: #6ddccf;
+}
+
+.hero .into h2 {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.hero .into :nth-child(3) {
+    padding-top: 25px;
+    text-indent: 10px;
+    line-height: 20px;
+}
+
+.hero .into :nth-child(4) {
+    padding-top: 25px;
+    text-indent: 10px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+/*this is profile tag */
+
+.profile {
+    background-color: snow;
+}
+
+.profileheader h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #6ddccf;
+    margin-bottom: 20px;
+}
+
+.profileContainer {
+    padding: 0px 100px;
+}
+
+.profileContainer :nth-child(1) span {
+    color: #6ddccf;
+}
+
+.profile .profileContainer p {
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.profile .profileContainer p:last-child {
+    margin-bottom: 0px;
+}
+
+/*this is qualification section */
+
+.qualification {
+    background-color: #fffefd;
+}
+
+.qualification .qualiheader h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #6ddccf;
+    margin-bottom: 20px;
+}
+
+.qualicontainer {
+    padding: 0px 100px;
+}
+
+.qualicontainer p {
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.qualicontainer p:last-child {
+    margin-bottom: 0px;
+}
+
+/*this is tag of html */
+
+.programming {
+    background-color: #f9f8f4;
+}
+
+.programming h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #6ddccf;
+    margin-bottom: 20px;
+}
+
+.programme {
+    padding: 10px 100px;
+}
+
+.programmingContainer {
+    display: flex;
+}
+
+.programme h3 {
+    margin-right: 30px;
+    line-height: 40px;
+}
+
+.programme p {
+    padding-top: 13px;
+}
+
+/*this is skill section */
+
+.skill {
+    background-color: #eeecec;
+}
+
+.skillContainer {
+    padding: 0px 100px;
+}
+
+.skill .box {
+    background-color: #000;
+}
+
+.skill .box h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #6ddccf;
+    padding-top: 20px;
+}
+
+.skill .box .content {
+    padding: 0px 20px 40px;
+    color: #6ddccf;
+}
+
+.skill .box .content .skilldata h3 {
+    padding-top: 50px;
+}
+
+.box .content .skilldata .br {
+    margin: -15px 10px 0px 180px;
+    height: 8px;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #353b48;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.skill .box .content .skilldata .br span {
+    height: 2px;
+    float: left;
+    background-color: #2187e7;
+}
+
+
+/* this is html  */
+.skill .box .content .skilldata .br .html {
+    width: 90%;
+    height: 7px;
+    border-radius: 5px;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+/* this is css  */
+.skill .box .content .skilldata .br .css {
+    width: 80%;
+    height: 7px;
+    border-radius: 5px;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/* this is bootstrap  */
+.skill .box .content .skilldata .br .bootstrap {
+    width: 70%;
+    height: 7px;
+    border-radius: 5px;
+    animation: bootstrap 2s;
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+/* this is .javascript */
+
+.skill .box .content .skilldata .br .javascript {
+    width: 60%;
+    height: 7px;
+    border-radius: 5px;
+    animation: javascript 2s;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* this si react  */
+.skill .box .content .skilldata .br .react {
+    width: 60%;
+    height: 7px;
+    border-radius: 5px;
+    animation: react 2s;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* this is .responsive */
+.skill .box .content .skilldata .br .responsive {
+    width: 97%;
+    height: 7px;
+    border-radius: 5px;
+    animation: res 2s;
+}
+
+@keyframes res {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 97%;
+    }
+}
+
+
+/* this is php  */
+.skill .box .content .skilldata .br .php {
+    width: 80%;
+    height: 7px;
+    border-radius: 5px;
+    animation: php 2s;
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/* this is .wordpress */
+.skill .box .content .skilldata .br .wordpress {
+    width: 85%;
+    height: 7px;
+    border-radius: 5px;
+    animation: word 2s;
+}
+
+@keyframes word {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+/* this is cpp  */
+.skill .box .content .skilldata .br .cpp {
+    width: 50%;
+    height: 7px;
+    border-radius: 5px;
+    animation: cpp 2s;
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+/*this is services section */
+.services {
+    background-color: #f4f4f4;
+}
+
+.services .servicesheader {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.services .servicesheader h1 {
+    font-size: 25px;
+    color: #6ddccf;
+}
+
+.component {
+    padding: 0px 50px;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 20px;
+}
+
+.component .serviceTemplate {
+    background-color: #fff;
+}
+
+.serviceTemplate h2 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.component .serviceTemplate {
+    position: relative;
+}
+
+.serviceTemplate .componenticons svg {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 156px;
+}
+
+.serviceTemplate .componenticons svg rect {
+    width: 60px;
+    height: 50px;
+    stroke-width: 2px;
+    stroke: #0e918c;
+    fill: #36cfbd;
+    position: relative;
+
+}
+
+.serviceTemplate .componenticons i {
+    font-size: 35px;
+    color: #000;
+    position: absolute;
+    top: -23px;
+    left: 175px;
+    z-index: 1;
+}
+
+.serviceTemplate p {
+    padding: 30px 60px 0px;
+}
+
+.component #box i {
+    left: 165px;
+
+}
+
+
+.component #box1 {
+    position: relative;
+    background: linear-gradient(to bottom, #0000ff 0%, #ff99ff 60%);
+}
+
+/*this is page section */
+
+.page {
+    padding: 0px;
+}
+
+.PageContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PageContent.aside {
+    width: 50%;
+}
+
+.page .content #aside {
+    background-color: black;
+}
+
+.page .content .aside h2 {
+    padding-top: 20px;
+    font-size: 35px;
+    color: #36cfbd;
+    text-align: center;
+}
+
+.pageasidecontent {
+    padding: 88px 30px;
+}
+
+.content .aside h3 {
+    width: 305px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.page .content .aside p {
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.page .content .pageIcons {
+    color: #fff;
+}
+
+.page .content .pageIcons i {
+    font-size: 25px;
+}
+
+/* ..........othersection.........  */
+
+#Computerinvaironment {
+    background-color: #fbfbfb;
+}
+
+.ComputerinvaironmentWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.ComputerinvaironmenTemplate {
+    width: 300px;
+    background-color: #fff;
+}
+
+.ComputerinvaironmenTemplate i {
+    position: relative;
+    left: 120px;
+    top: 10px;
+    padding-top: 5px;
+    height: 50px;
+    width: 60px;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    background-color: #36cfbd;
+    margin-bottom: 10px;
+}
+
+.ComputerinvaironmenTemplateheader {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ComputerinvaironmenTemplateinfo {
+    padding: 10px 43px;
+}
+
+.ComputerinvaironmenTemplate p {
+    text-align: center;
+}
+
+
+/*this is blog section */
+#Blog {
+    background-color: black;
+
+    /*this is clip path */
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 95%, 67% 85%, 0 96%, 0 0);
+}
+
+
+#Blog .blogheader h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: bold;
+    color: #36cfbd;
+}
+
+#Blog .blogheader p {
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.blog1 {
+    padding: 50px 0px 100px;
+}
+
+.blog1Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.blog_content {
+    width: 300px;
+    background-color: white;
+}
+
+.blogimage {
+    width: 300px;
+}
+
+.blogimage img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text {
+    padding: 10px;
+}
+
+.blog_content .text h2 {
+    margin: 10px 0px;
+}
+
+.blog_content .text h5 {
+    margin: 10px 0px;
+}
+
+#blog-content .text p {
+    text-align: justify;
+    color: initial;
+}
+
+#blog-content {
+    width: 299px;
+}
+
+/*this is afix section */
+
+#ourWorks {
+    background-color: #f7f7f7;
+}
+
+#ourWorks .worksheader {
+    text-align: center;
+}
+
+#ourWorks .worksheader h1 {
+    color: #36cfbd;
+}
+
+.ourWorksContent {
+    padding: 40px 202px;
+    overflow: hidden;
+}
+
+.ourworksPhoto {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.ourworksPhoto img {
+    max-width: 100%;
+    height: 200px;
+}
+
+
+/* < !-- this is review section --> */
+
+.review {
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, .1),
+            rgba(0, 0, 0, .1)),
+        url(../images/laptop.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /*this is clip path */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 80% 89%, 0 100%, 0 67%, 0 0);
+
+}
+
+.review .hero1 {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.review .hero1 h1 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.review .hero1 p {
+    padding-top: 15px;
+    color: #fff;
+}
+
+.review .hero1 input[type="button"] {
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: bold;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: #36cfbd;
+    transition: .5s;
+}
+
+.review .hero1 input[type="button"]:hover {
+    background: none;
+    border-radius: 3px;
+    border: 2px solid #36cfbd;
+}
+
+/* ....mentor........ */
+
+.mentor {
+    text-align: center;
+}
+
+.mentor .own span {
+    color: #36cfbd;
+}
+
+.mentor .own p {
+    padding-top: 5px;
+}
+
+.maintorinfo {
+    width: 200px;
+    margin: 70px auto;
+}
+
+.mentor .maintorinfo img {
+    border-radius: 100%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mentor .maintorinfo p {
+    padding-top: 10px;
+    width: 190px;
+    text-align: -webkit-center;
+}
+
+/* this is contact section  */
+
+article {
+    padding: 50px 0px;
+    background-color: #f6f6f6;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.contact .grid {
+    padding: 10px;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+}
+
+.contact #grid1 h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #6ddccf;
+}
+
+.contact #grid1 i {
+    font-size: 35px;
+    color: #000;
+}
+
+.contact #grid1 p {
+    padding-top: 30px;
+}
+
+.contact #grid2 h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #6ddccf;
+}
+
+.contact #grid2 ul {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact #grid2 ul li {
+    list-style-type: none;
+}
+
+.contact #grid2 ul li i {
+    line-height: 50px;
+    font-size: 30px;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #6ddccf;
+    transition: .9s all;
+}
+
+.contact #grid2 ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+}
+
+.contact #grid2 ul li a:hover {
+    box-shadow: 0px 0px 0px 2px #1b7368;
+
+}
+
+.contact #grid2 ul li i:hover {
+    transform: rotate(360deg);
+}
+
+article .up {
+    display: none;
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #36cfbd;
+}
+
+.up.none {
+    display: block;
+}
+
+article .up i {
+    font-size: 45px;
+    color: #fff;
+
+}
+
+/* this is foter bar  */
+
+footer {
+    height: 50px;
+    background-color: #aaa;
+}
+
+footer p {
+    color: inherit;
+    line-height: 50px;
+    text-align: center;
+}

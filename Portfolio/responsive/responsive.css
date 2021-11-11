@@ -1,0 +1,391 @@
+/* this is largde laptop or desktop */
+@media (min-width:1200px) {
+    .contenthide {
+        display: none;
+    }
+
+    #services .component {
+        padding: 0px 40px;
+    }
+
+    #services .serviceTemplate .componenticons svg {
+        left: 156px;
+    }
+
+    #services .serviceTemplate .componenticons i {
+        left: 175px;
+    }
+
+    #services .component #box i {
+        left: 165px;
+
+    }
+
+    .page .PageContent {
+        justify-content: space-between;
+    }
+}
+
+/* this is small  screen Desktop and laptop*/
+@media (min-width:993px) {
+
+    .container {
+        margin: auto;
+        max-width: 970px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    nav .navToggle {
+        display: none;
+    }
+
+    .contenthide {
+        display: none;
+    }
+
+    nav .navheader {
+        justify-content: space-evenly;
+    }
+
+    .navheader .logo {
+        font-size: 38px;
+    }
+
+    .navheader .NavLinks {
+        width: 58%;
+    }
+
+    .services .component {
+        padding: 0px 20px;
+    }
+
+    .services .serviceTemplate .componenticons svg {
+        left: 131px;
+    }
+
+    .services .serviceTemplate .componenticons i {
+        left: 147px;
+    }
+
+    .services .component #box i {
+        left: 140px;
+
+    }
+
+    .page .PageContent .aside {
+        width: 50%;
+    }
+
+    #ourWorks .ourWorksContent {
+        padding: 40px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* * this is largde screen tablate */
+@media (max-width:992px) {
+    .container {
+        margin: auto;
+        max-width: 850px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    /* ..nav... */
+
+    nav .navToggle {
+        display: block;
+    }
+
+    nav .navheader .logo {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    nav .navheader .NavLinks {
+        position: fixed;
+        top: 49px;
+        left: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.507);
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        transition: .1s all ease-in-out;
+        display: none;
+    }
+
+    nav .navheader .NavLinks li {
+        margin: 0px 46%;
+    }
+
+    nav .navheader .NavLinks #about .navigationlist {
+        display: none;
+    }
+
+    nav #navqualification {
+        width: 130px;
+    }
+
+    header .intodaction {
+        left: 150px;
+    }
+
+    .programmingContainer {
+        margin-bottom: 15px;
+    }
+
+    .programmingContainer:last-child {
+        margin-bottom: 0px;
+    }
+
+    .programming .programme p {
+        padding-top: 5px;
+        line-height: 23px;
+    }
+
+    .programming .programme h3 {
+        margin-right: 15px;
+    }
+
+    .skill {
+        padding: 0px;
+    }
+
+    .skill .skillContainer {
+        padding: 0px;
+    }
+
+    #services .component {
+        padding: 0px 20px;
+        display: grid;
+        grid-template-rows: repeat(3, 250px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services .component .box1 p {
+        padding: 20px 50px 10px;
+    }
+
+    #Computerinvaironment .ComputerinvaironmentWrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ComputerinvaironmenTemplate {
+        margin-bottom: 30px;
+    }
+
+    .page .PageContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page .PageContent .aside {
+        width: 50%;
+    }
+
+    #Blog .blog1 {
+        padding: 50px 0px 125px;
+    }
+
+    #Blog .blog1Content {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .blog_content {
+        margin-bottom: 30px;
+    }
+
+    #ourWorks .ourWorksContent {
+        padding: 40px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    article .contact .grid {
+        width: 360px;
+    }
+}
+
+/* this is small tablate screen  */
+@media (max-width:768px) {
+    .container {
+        margin: auto;
+        max-width: 720px;
+        padding: 0px 15px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    header .intodaction {
+        left: 18rem;
+    }
+
+    .about .hero {
+        padding: 0px;
+    }
+
+    .profile .profileContainer {
+        padding: 0px;
+    }
+
+    .qualification .qualicontainer {
+        padding: 0px;
+    }
+
+    .programming .programme {
+        padding: 10px 0px;
+    }
+
+    .services .component .box1 h2 {
+        font-size: 22px;
+    }
+
+    #services .component {
+        padding: 0px;
+    }
+
+    .component .serviceTemplate h2 {
+        padding-top: 20px;
+    }
+
+    #services .component .componenticons {
+        display: none;
+    }
+
+    .component .serviceTemplate p {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .page .PageContent {
+        display: block;
+    }
+
+    .page .PageContent .aside {
+        width: 100%;
+    }
+
+    #Blog .blog1 {
+        padding: 50px 0px 200px;
+    }
+
+    #ourWorks .ourworksPhoto {
+        width: 255px;
+    }
+
+    article .contact {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    article #grid1 {
+        margin-bottom: 30px;
+    }
+}
+
+/* this is mobile screen  */
+@media (max-width:548px) {
+    .container {
+        margin: auto;
+        max-width: 450px;
+        padding: 0px 15px;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    nav .navheader .logo {
+        font-size: 35px;
+    }
+
+    header .intodaction {
+        position: initial;
+        top: 0px;
+        padding: 120px 10px;
+        float: none;
+        margin-right: 0px;
+    }
+
+    header .intodaction .about_me h1 {
+        font-size: 28px;
+    }
+
+    header .intodaction .about_me h2 {
+        font-size: 27px;
+    }
+
+    header .intodaction .about_me p {
+        width: 260px;
+        line-height: 19px;
+    }
+
+    header .cvbutton {
+        text-align: center;
+    }
+
+    .about .aboutImage {
+        width: 270px;
+        margin-right: 20px;
+    }
+
+    .about .hero img {
+        height: 180px;
+    }
+
+    .programming .programmingContainer {
+        display: block;
+    }
+
+    .skill .box .content .skilldata .br {
+        margin: -15px 10px 0px 135px;
+    }
+
+    #services .component {
+        padding: 0px 27px;
+        grid-column-gap: 0px;
+        grid-template-rows: repeat(6, 250px);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .component .serviceTemplate p {
+        padding: 15px 20px 0px;
+        line-height: 23px;
+        text-align: -webkit-center;
+    }
+
+    .page .content .aside h3 {
+        font-size: 30px;
+    }
+
+    .page .pageimage {
+        display: none;
+    }
+
+    #Blog .blogimage {
+        width: 290px;
+    }
+
+    #Blog .blog_content {
+        width: 290px;
+    }
+
+    footer .footerContainer p {
+        font-size: 11px;
+    }
+}
